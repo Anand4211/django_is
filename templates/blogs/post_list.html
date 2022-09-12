@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'blogs/base.html'%}
+{%block block_title%} post{% endblock%}
+{% block attr%}
+<div class="container" align="center"><h1><em>this is post</em></h1></div>
+
+{% for i in post%}
+<a href="{{i.get_absolute_url}}"><h2>{{i.title}}</h2></a>
+ published on {{i.publish}} By {{i.author|title}}
+<p>{{i.body|truncatewords:30|linebreaks}}</p>
+{%endfor%}
+{%endblock%}
+{% block dcf%}
+<h1>this is try</h1>
+{%endblock%}

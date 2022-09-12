@@ -1,0 +1,17 @@
+.attr{float:left;
+width:60%;
+
+background:red;
+padding:0 0 0 20px;
+}
+.dcf{
+width:40%;
+float:right;
+background-color: #111;
+}
+h1{border-bottom:1px blue solid;
+font-size:23px;
+}
+h2{color:white;}
+#as{ background:red;
+color:white;}

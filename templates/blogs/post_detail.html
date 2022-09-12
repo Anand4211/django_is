@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'blogs/base.html'%}
+{%block block_title%} {{st.title}}{% endblock%}
+{% block attr%}
+<h1><em>{{st.title}}</em></h1>
+
+ <p>published on {{st.publish}} By {{st.author|title}}</p>
+{{st.body|linebreaks}}
+{%endblock%}
+{% block dcf%}
+<h1>this is try</h1>
+{%endblock%}
